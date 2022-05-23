@@ -491,7 +491,7 @@ module.exports = function (RED) {
 										d = parseFloat(d/1000).toFixed(1)+'k'
 									}
 									else{
-										d = d.toFixed(3-tl)
+										d = d.toFixed(0)
 									}													
 									target.setAttributeNS(null,'y',yp)							
 									$(target).text(d)
